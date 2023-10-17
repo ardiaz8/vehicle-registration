@@ -1,4 +1,4 @@
-//Bibliotecas
+//Bibliotecas Utilizadas
 #include <iostream>
 #include <cstdlib>
 #include <stdlib.h>
@@ -114,9 +114,9 @@ void menu(void){
 	cout << "3) Elimiar el primer vehiculo de la lista" 						 << endl;
 	cout << "4) Elimiar el ultimo vehiculo de la lista" 					   	 << endl;
 	cout << "5) Mostrar todos los vehiculos registrados" 					 	 << endl;
-	cout << "6) Buscar por el año de un vehiculo" 							 	 << endl;
+	cout << "6) Buscar por el aï¿½o de un vehiculo" 							 	 << endl;
 	cout << "7) Buscar por propietario de un vehiculo"			 			 	 << endl;
-	cout << "8) Ordenar los vehiculos en orden creciente por el año del vehiculo"<< endl;
+	cout << "8) Ordenar los vehiculos en orden creciente por el aï¿½o del vehiculo"<< endl;
 	cout << "9) Respaldar informacion en un archivo" 							 << endl;
 	cout << "10) Consultar los datos del archivo\n" 							 << endl;
 	
@@ -151,10 +151,10 @@ void insertarInicio(void){
 	
 	do {
 		//Validar que sea una fecha correcta
-		cout << "Año del vehiculo (entre 1950 y 2022)-->" << endl;
+		cout << "Aï¿½o del vehiculo (entre 1950 y 2022)-->" << endl;
 		cin >> nuevo->year;
 		if(nuevo->year < 1950 || nuevo->year > 2022){
-			cout << "Año invalido" << endl;
+			cout << "Aï¿½o invalido" << endl;
 			cin.ignore();
 		}//if
 	}while(nuevo->year < 1950 || nuevo->year > 2022);
@@ -256,10 +256,10 @@ void insertarFinal(void){
 	
 	do {
 		//Validar que sea una fecha correcta
-		cout << "Año del vehiculo (entre 1950 y 2022)-->" << endl;
+		cout << "Aï¿½o del vehiculo (entre 1950 y 2022)-->" << endl;
 		cin >> nuevo->year;
 		if(nuevo->year < 1950 || nuevo->year > 2022){
-			cout << "Año invalido" << endl;
+			cout << "Aï¿½o invalido" << endl;
 			cin.ignore();
 		}//if
 	}while(nuevo->year < 1950 || nuevo->year > 2022);
@@ -347,7 +347,7 @@ void eliminarInicio(void){
 	cout << "_____________________________" 	<< endl;
 	cout << "Modelo: "				 			<< borrar->modelo << endl;
 	cout << "Marca: "			 				<< borrar->marca << endl;
-	cout << "Año: "				 				<< borrar->year << endl;
+	cout << "Aï¿½o: "				 				<< borrar->year << endl;
 	cout << "Numero de pasajeros: " 			<< borrar->numeroPasajeros << endl;
 	cout << "Numero de puertas: "			    << borrar->numeroPuertas << endl;
 	cout << "Color: "			 				<< borrar->color << endl;
@@ -389,7 +389,7 @@ void eliminarFinal(void){
 	cout << "_____________________________" 	<< endl;
 	cout << "Modelo: "				 			<< borrar->modelo << endl;
 	cout << "Marca: "			 				<< borrar->marca << endl;
-	cout << "Año: "				 				<< borrar->year << endl;
+	cout << "Aï¿½o: "				 				<< borrar->year << endl;
 	cout << "Numero de pasajeros: " 			<< borrar->numeroPasajeros << endl;
 	cout << "Numero de puertas: "			    << borrar->numeroPuertas << endl;
 	cout << "Color: "			 				<< borrar->color << endl;
@@ -434,7 +434,7 @@ void mostrarVehiculos(void){
 		cout << "______________________________________" 						<< endl;
 		cout << "Modelo: "				 			<< copia->modelo 			<< endl;
 		cout << "Marca: "			 				<< copia->marca				<< endl;
-		cout << "Año: "				 				<< copia->year				<< endl;
+		cout << "Aï¿½o: "				 				<< copia->year				<< endl;
 		cout << "Numero de pasajeros: " 			<< copia->numeroPasajeros	<< endl;
 		cout << "Numero de puertas: "			    << copia->numeroPuertas		<< endl;
 		cout << "Color: "			 				<< copia->color				<< endl;
@@ -464,7 +464,7 @@ void buscarFecha(void){
 	}//if
 	
 	//Solicitar nombre del vehiculo
-	cout << "Ingresa el año del vehiculo a buscar--> ";
+	cout << "Ingresa el aï¿½o del vehiculo a buscar--> ";
 	cin >> targetYear;	
 	cin.ignore();
 	
@@ -474,7 +474,7 @@ void buscarFecha(void){
 			cout << "_____________________________" 	<< endl;
 			cout << "Modelo: "				 			<< copia->modelo << endl;
 			cout << "Marca: "			 				<< copia->marca << endl;
-			cout << "Año: "				 				<< copia->year << endl;
+			cout << "Aï¿½o: "				 				<< copia->year << endl;
 			cout << "Numero de pasajeros: " 			<< copia->numeroPasajeros << endl;
 			cout << "Numero de puertas: "			    << copia->numeroPuertas << endl;
 			cout << "Color: "			 				<< copia->color << endl;
@@ -491,7 +491,7 @@ void buscarFecha(void){
 		copia = copia->next;
 	}//while
 	
-	cout << "El año " << targetYear << " no esta registrado en la lista" << endl;
+	cout << "El aï¿½o " << targetYear << " no esta registrado en la lista" << endl;
 	return;
 }//buscar
 
@@ -507,7 +507,7 @@ void buscarPropietario(void){
 		return;
 	}//if
 	
-	//Solicitar dueño del vehiculo
+	//Solicitar dueï¿½o del vehiculo
 	cout << "Ingresa el nombre del propietario a buscar --> ";
 	cin >> targetPropietario;
 
@@ -518,7 +518,7 @@ void buscarPropietario(void){
 			cout << "_____________________________" 	<< endl;
 			cout << "Modelo: "				 			<< copia->modelo << endl;
 			cout << "Marca: "			 				<< copia->marca << endl;
-			cout << "Año: "				 				<< copia->year << endl;
+			cout << "Aï¿½o: "				 				<< copia->year << endl;
 			cout << "Numero de pasajeros: " 			<< copia->numeroPasajeros << endl;
 			cout << "Numero de puertas: "			    << copia->numeroPuertas << endl;
 			cout << "Color: "			 				<< copia->color << endl;
@@ -537,7 +537,7 @@ void buscarPropietario(void){
 	return;	
 }//buscarPropietario
 
-//#8 Funcion para ordenar los vehiculos por su año en orden creciente
+//#8 Funcion para ordenar los vehiculos por su aï¿½o en orden creciente
 void ordenarPorYear(void){
 	//Declarar apuntador
 	vehiculo *copia=PRIMERO, *copia2=NULL;
@@ -555,7 +555,7 @@ void ordenarPorYear(void){
 		cout << "_____________________________" 	<< endl;
 		cout << "Modelo: "				 			<< copia->modelo << endl;
 		cout << "Marca: "			 				<< copia->marca << endl;
-		cout << "Año: "				 				<< copia->year << endl;
+		cout << "Aï¿½o: "				 				<< copia->year << endl;
 		cout << "Numero de pasajeros: " 			<< copia->numeroPasajeros << endl;
 		cout << "Numero de puertas: "			    << copia->numeroPuertas << endl;
 		cout << "Color: "			 				<< copia->color << endl;
@@ -583,7 +583,7 @@ void ordenarPorYear(void){
 		cout << "_____________________________" 	<< endl;
 		cout << "Modelo: "				 			<< copia->modelo << endl;
 		cout << "Marca: "			 				<< copia->marca << endl;
-		cout << "Año: "				 				<< copia->year << endl;
+		cout << "Aï¿½o: "				 				<< copia->year << endl;
 		cout << "Numero de pasajeros: " 			<< copia->numeroPasajeros << endl;
 		cout << "Numero de puertas: "			    << copia->numeroPuertas << endl;
 		cout << "Color: "			 				<< copia->color << endl;
@@ -615,7 +615,7 @@ void respaldar(void){
 		archivoGuardar <<  "______________________________________" 						<< endl;
 		archivoGuardar <<  "Modelo: "				 			<< copia->modelo 			<< endl;
 		archivoGuardar <<  "Marca: "			 				<< copia->marca				<< endl;
-		archivoGuardar <<  "Año: "				 				<< copia->year				<< endl;
+		archivoGuardar <<  "Aï¿½o: "				 				<< copia->year				<< endl;
 		archivoGuardar <<  "Numero de pasajeros: " 			<< copia->numeroPasajeros	<< endl;
 		archivoGuardar <<  "Numero de puertas: "			    << copia->numeroPuertas		<< endl;
 		archivoGuardar <<  "Color: "			 				<< copia->color				<< endl;
