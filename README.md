@@ -1,4 +1,3 @@
 # vehicleRegistration 
 
-This is a text-based menu-driven program for managing a list of vehicles. 
-You can add vehicles to the start or end of the list, delete vehicles from the start or end of the list, show all registered vehicles, and search for vehicles by year or brand.
+This C++ program is a vehicle registry system that allows users to manage and store information about vehicles. Users can add vehicles to the registry, delete vehicles, display a list of registered vehicles, search for vehicles by year or owner, and sort vehicles by their manufacturing year in ascending order.
